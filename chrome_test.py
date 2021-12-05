@@ -2,6 +2,7 @@
 from selenium import webdriver
 from time import sleep
 import pandas as pd
+from selenium.webdriver.android.webdriver import WebDriver
 driver = webdriver.Chrome()    # Chrome浏览器
 driver.get("http://www.baidu.com")
 driver.find_element_by_class_name("s_ipt").send_keys("selenium")
